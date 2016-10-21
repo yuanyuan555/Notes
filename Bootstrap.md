@@ -190,4 +190,10 @@
             </thead>
          </div>
      </div>
-    
+## 表单
+###### 设置了 .form-control 类的 <input>、<textarea> 和<select>元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在.form-group 中可以获得最好的排列。
+    <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmaik1" placeholder="Enter email">
+    </div>
+
