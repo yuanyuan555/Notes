@@ -141,13 +141,31 @@
             <th>姓名</th>
             <th>年龄</th>
             <th>职业</th>
-            <th>城市</th>
-            <th>公司</th>
           </tr>
         </thead>
      </div>
-    
-    
+#### 条纹状表格 
+###### 通过 .table-striped 类可以给 tbody 之内的每一行增加斑马条纹样式。 (IE8 不支持)
+    <div class="table table-striped">
+        <thead> 
+          <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>职业</th>
+          </tr>
+        </thead>
+     </div> 
+#### 表格外框
+###### 添加 .table-bordered 类为表格和其中的每个单元格增加边框
+    <div class="table table-striped table-bordered">
+        <thead> 
+          <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>职业</th>
+          </tr>
+        </thead>
+     </div>       
     
     
     
