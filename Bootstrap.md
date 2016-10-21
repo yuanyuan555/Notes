@@ -166,6 +166,28 @@
           </tr>
         </thead>
      </div>       
-    
-    
+#### 高亮 
+###### 通过添加 .table-hover 类可以让 tbody 中的每一行对鼠标悬停状态作出响应。
+    <div class="table table-striped table-bordered table-hover">
+        <thead> 
+          <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>职业</th>
+          </tr>
+        </thead>
+     </div>
+#### 响应式表格
+###### 将任何 .table 元素包裹在 .table-responsive 元素内，即可创建响应式表格，其会在小屏幕设备上（小于768px）水平滚动。当屏幕大于 768px 宽度时，底部的水平滚动条消失。
+    <div class="table-responsive">
+        <div class="table table-striped table-bordered">
+            <thead> 
+              <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>职业</th>
+              </tr>
+            </thead>
+         </div>
+     </div>
     
