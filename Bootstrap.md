@@ -17,42 +17,42 @@
       </body>
       <html>
 ### 组件列表
-    按钮组
-    下路菜单按钮
-    选项卡
-    导航栏
-    标签
-    徽章
-    页头与　hero　单元
-    缩略图
-    警示
-    进度条
-    对话框
-    下拉菜单
-    工具提示
-    Popvers
-    手风琴
-    旋转木马
-    Typeahead
+###### 按钮组
+###### 下路菜单按钮
+###### 选项卡
+###### 导航栏
+###### 标签
+###### 徽章
+###### 页头与　hero　单元
+###### 缩略图
+###### 警示
+###### 进度条
+###### 对话框
+###### 下拉菜单
+###### 工具提示
+###### Popvers
+###### 手风琴
+###### 旋转木马
+###### Typeahead
 #### 响应式
-    //确保适当的回执和屏幕缩进　需添加　viewport 元素标签
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    //在移动设备上，　viewport 设置meta属性为　user-scalable=no 　可以禁用其缩进功能。
-    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
+    //确保适当的回执和屏幕缩进　需添加　viewport 元素标签
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    //在移动设备上，　viewport 设置meta属性为　user-scalable=no 　可以禁用其缩进功能。
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
 #### 布局容器
-    <div class="container">
-    ...
+    <div class="container">
+    内容
     </div>
 ###### .container-fluid 类似于１００％宽度，占据全部视口（viewport）的容器。
     <div class="container-fluid">
     ...
     </div>
 #### 网格参数
-    超小屏幕（手机）　：<768px     　类前缀　：　.col-xs-　列数
-    小屏幕（平板）　　：>=768px    　类前缀　：　.col-xs-　列数
-    中等屏幕（显示器）：>=992px    　类前缀　：　.col-xs-　列数
-    大屏幕（大显示器）：>=1200px     类前缀　：　.col-xs-　列数
-    例子：　<div class="col-md-1">１２列中的１列</div>
+    超小屏幕（手机）　：<768px     　类前缀　：　.col-xs-　列数
+    小屏幕（平板）　　：>=768px    　类前缀　：　.col-xs-　列数
+    中等屏幕（显示器）：>=992px    　类前缀　：　.col-xs-　列数
+    大屏幕（大显示器）：>=1200px     类前缀　：　.col-xs-　列数
+    例子：　<div class="col-md-1">１２列中的１列</div>
 #### 流式布局容器  
 ###### .container 修改为 .container-fluid
     <div class="container-fluid">
@@ -63,13 +63,13 @@
 #### 移动设备和桌面屏幕（手机，平板，桌面）
     <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-8">手机，平板，桌面</div>
+            <div class="col-xs-12 col-sm-6 col-md-8">手机，平板，桌面</div>
           </div>
-      </div>
+     </div>
 #### 设置列偏移
-    .col-md-offser-４　　右偏移４个列
+    .col-md-offser-４　　右偏移４个列
 #### 设置排列
-    .col-md-push-*是向右浮动, .col-md-pull-*是向左浮动. *是代表浮动的列等份.(1~12)
+###### .col-md-push-*是向右浮动, .col-md-pull-*是向左浮动. *是代表浮动的列等份.(1~12)
     <div class="col-md-9 col-md-push-3">右浮动３列</div>
     <div class="col-md-3 col-md-push-9">左浮动９列</div>
 #### 标题
