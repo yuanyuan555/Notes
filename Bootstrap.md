@@ -107,4 +107,47 @@
     <blockquote>
         <p>可以使用“bockquote”标签来表示引用其他来源的内容</p>
     </blockquote>
-        
+##　列表
+#### 无序列表
+    <ul>
+        <li>H5</li>
+    </ul>
+#### 有序列表
+    <ul>
+        <li>H5</li>
+    </ul>
+#### 定义列表
+    <ul>
+        <dt>H5</dt>
+        <dd>C</dd>
+        <dd>C</dd>
+    </ul>
+#### 内联列表
+    <ul　class="list-inline">
+        <li>H5</li>
+    </ul>
+#### 代码
+###### 通过 <code> 标签包裹内联样式的代码片段。
+    <code>&lt;section&gt;</code>
+###### 通过 <kbd> 标签标记用户通过键盘输入的内容。  
+    <kbd>cd</kbd>
+###### 多行代码可以使用 <pre> 标签。为了正确的展示代码，注意将尖括号做转义处理。
+    <pre>&lt;p&gt;...&lt;/p&gt</pre>
+#### 表格
+###### .table 类可以为其赋予基本的样式 — 少量的内补（padding）和水平方向的分隔线
+    <div class="table">
+        <thead>
+          <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>职业</th>
+            <th>城市</th>
+            <th>公司</th>
+          </tr>
+        </thead>
+     </div>
+    
+    
+    
+    
+    
