@@ -70,12 +70,12 @@
     .col-md-offser-４　　右偏移４个列
 #### 设置排列
 ###### .col-md-push-*是向右浮动, .col-md-pull-*是向左浮动. *是代表浮动的列等份.(1~12)
-    <div class="col-md-9 col-md-push-3">右浮动３列</div>
-    <div class="col-md-3 col-md-push-9">左浮动９列</div>
+    <div class="col-md-9 col-md-push-3">右浮动３列</div>
+    <div class="col-md-3 col-md-push-9">左浮动９列</div>
 #### 标题
-    <h1>标题 <small>标题右变得标签　</small></h1>
+    <h1>标题 <small>标题右变得标签　</small></h1>
 #### 段落
-    突显某个段落添加　class='lead'.
+    突显某个段落添加　class='lead'.
     <p class="lead">内容</p>
 #### mark 标签
     <p>内容<mark>此处内容突出标记</mark></p>
