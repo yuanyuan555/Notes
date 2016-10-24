@@ -201,7 +201,7 @@
 ###需要手动设置宽度
 ###### 在 Bootstrap 中，输入框和单选/多选框控件默认被设置为 width: 100%; 宽度。在内联表单，我们将这些元素的宽度设置为 width: auto;，因此，多个控件可以排列在同一行。根据你的布局需求，可能需要一些额外的定制化组件
 ### 一定要添加 label 标签
-    ###### 如果你没有为每个输入控件设置 label 标签，屏幕阅读器将无法正确识别。对于这些内联表单，你可以通过为 label 设置 .sr-only 类将其隐藏。        <from class="form-inline" role="form">
+    如果你没有为每个输入控件设置 label 标签，屏幕阅读器将无法正确识别。对于这些内联表单，你可以通过为 label 设置 .sr-only 类将其隐藏。                   <from class="form-inline" role="form">
             <div class="form-group">
               <label class="sr-only" for="exampleInputEmail2">Eamil address</label>
               <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
