@@ -1,3 +1,9 @@
+# 配置　vim
+## 配置前需要先安装　vim
+#### 解压　vimconfig.rar  后会有一个 vimconfig 的文件夹
+    cd vimconfig
+    sudo bash ./config.sh
+
 # linux  命令
 
 ## ifconfig 　:　 查看IP
