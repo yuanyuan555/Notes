@@ -137,5 +137,6 @@
 	apt-get download 软件包　：　只下载包不安装
 	apt-get source 软件包　：　下载源码
 	apt-get upgrade : 升级软件包
-	
+### 如果安装失败。输入以下命令进行调节，解决依赖关系后继续安装
+	sudo apt-get install -f
 	
