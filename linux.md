@@ -115,5 +115,5 @@
 #### kill -9 进程ID号  : 结束一个进程
 #### ps ajx  :  查看ID号
 
-#　<font color="red">程序:程序是静态的，存在磁盘上的</font>
-#　<font color="red">进程：处于运行状态的程序</font>
+<font color="red">程序:程序是静态的，存在磁盘上的</font>
+<font color="red">进程：处于运行状态的程序</font>
