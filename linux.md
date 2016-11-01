@@ -79,6 +79,7 @@
 #### vim /etc/group       查看配置文件的组
 #### usermod -s/bin/bash  -G group,group  newuser  
     修改解释器                   组           目录
+    -G 修改用户所属的附加群组　
 # root 超级用户
 #### sudo root password   超级用户密码
 #### deluser newuser --remove-home     删除用户  （连带主目录一起删除）
@@ -98,17 +99,17 @@
 
 #### df       扫描磁盘的使用情况
 #### df -h    人类可读的磁盘使用情况
-        -a
-        -T
+        -a　　包含所有的具有０ Block的文件系统
+        -T    显示文件系统的形式
 #### du       估计文件使用了多少磁盘空间
-#### du -h
+#### du -h    以　K , M , G 为单位，提高信息的可读性
         -s    直接统计结果不显示信息
 #### ps       系统最近运行的
 #### ps ajx   列出当前系统上前后台运行的程序
 
-#### pstree
+#### pstree　　命令将所有行程以树状图显示
 
-#### top
+#### top　用于实现显示process的动态
 
 ### kill 杀死
 #### kill -9 进程ID号  : 结束一个进程
