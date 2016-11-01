@@ -127,11 +127,15 @@
 	dpkg -L 包名　：　查看软件包安装的路径
 	dpkg -P 包名　：　卸载　（彻底卸载，移除所有的配置文件）
 	dpkg -r 包名　：　软件包卸载
-	
+	dpkg -get-selections : 列出所有安装的软件包
 ## 在线安装　：  
 	apt-get update : 更新本地软件包（源）
 	apt-get install 安装包的名字　：　安装
 	apt-cache policy 软件包　：　查看软件包的安装状态
 	apt-cache show 软件包　：　查看信息
-	apt-get remove --purge 软件包　：　只下载包不安装
+	apt-get remove --purge 软件包　：　卸载　（配置文件一起删除）
+	apt-get download 软件包　：　只下载包不安装
 	apt-get source 软件包　：　下载源码
+	apt-get upgrade : 升级软件包
+	
+	
