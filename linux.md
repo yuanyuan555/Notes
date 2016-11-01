@@ -115,6 +115,23 @@
 #### kill -9 进程ID号  : 结束一个进程
 #### ps ajx  :  查看ID号
 
+
 ### 程序:程序是静态的，存在磁盘上的
 ### 进程：处于运行状态的程序
 
+# 在超级用户下安装卸载
+## 本地安装　：
+	dpkg      : 本地安装操作命令
+	dpkg -i 软件报的全程　:　软件包安装
+	dpkg -s 包名　：　查看软件包的安装状态
+	dpkg -L 包名　：　查看软件包安装的路径
+	dpkg -P 包名　：　卸载　（彻底卸载，移除所有的配置文件）
+	dpkg -r 包名　：　软件包卸载
+	
+## 在线安装　：  
+	apt-get update : 更新本地软件包（源）
+	apt-get install 安装包的名字　：　安装
+	apt-cache policy 软件包　：　查看软件包的安装状态
+	apt-cache show 软件包　：　查看信息
+	apt-get remove --purge 软件包　：　只下载包不安装
+	apt-get source 软件包　：　下载源码
