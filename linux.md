@@ -72,3 +72,43 @@
 #### [] 号用于制定匹配字符    例：ls file_[0123]  或　ls file_[0-3] 只匹配　[]　内带有　０，１，２，３的文件
 #### ^ 号用于[]中进行字符过滤　例：ls file_[^123]  匹配除了带有　１，２，３　的所有文件
     
+# etc 配置文件
+#### 添加新用户
+#### adduser 新的用户名 ：添加新用户  （注：仔细观看记住密码，看清是什么密码）
+#### vim /etc/passwd      查看配置文件的...
+#### vim /etc/group       查看配置文件的组
+#### usermod -s/bin/bash  -G group,group  newuser  
+    修改解释器                   组           目录
+# root 超级用户
+#### sudo root password   超级用户密码
+#### deluser newuser --remove-home     删除用户  （连带主目录一起删除）
+#### id  列出当前
+## 先删用户 后删组
+#### 给普通用户赋予超级用户权限的方法 vi /etc/su
+								 vi /etc/sudoers
+#### 然后再修改问        # User privilege specification
+                   root  ALL=(ALL:ALL)ALL
+                   ....  ALL=(ALL:ALL)ALL
+                   ....代表你要赋予权限的不同用户名
+#### shutdown -f now 现在重启
+		 -h     现在关机
+		 -k     通知关机
+#### shutdown -c  取消之前关机重启等命令   
+
+#### df       扫描磁盘的使用情况
+#### df -h    人类可读的磁盘使用情况
+        -a
+        -T
+#### du       估计文件使用了多少磁盘空间
+#### du -h
+        -s    直接统计结果不显示信息
+#### ps       系统最近运行的
+#### ps ajx   列出当前系统上前后台运行的程序
+
+#### pstree
+
+#### top
+
+### kill 杀死
+#### kill -9 进程ID号  : 结束一个进程
+#### ps ajx  :  查看ID号
