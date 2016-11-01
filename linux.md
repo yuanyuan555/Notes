@@ -85,11 +85,12 @@
 #### id  列出当前
 ## 先删用户 后删组
 #### 给普通用户赋予超级用户权限的方法 vi /etc/su
-				 vi /etc/sudoers
-	然后再修改问        # User privilege specification
-                 	  root  ALL=(ALL:ALL)ALL
-			  ....  ALL=(ALL:ALL)ALL
-			  ....代表你要赋予权限的不同用户名
+	vi /etc/sudoers
+	然后再修改问       
+	# User privilege specification
+	root  ALL=(ALL:ALL)ALL
+	....  ALL=(ALL:ALL)ALL
+	....代表你要赋予权限的不同用户名
 #### shutdown -f now 现在重启
 		-h     现在关机
 		-k     通知关机
