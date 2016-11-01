@@ -83,7 +83,7 @@
 # root 超级用户
 #### sudo root password   超级用户密码
 #### deluser newuser --remove-home     删除用户  （连带主目录一起删除）
-	delgroup newgroup   删除组名
+#### delgroup newgroup   删除组名
 	注：如果删除了用户　ls 查看普通用户已经删除，但是电脑仍然有你删的用户，那么说明
 	你没有“退出”要删除的用户。而是切换出了该用户。需要回到要删除而没有删除的用户。重
 	新“退出”该用户，再进行删除。
