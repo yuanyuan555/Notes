@@ -124,6 +124,14 @@
 ### 程序:程序是静态的，存在磁盘上的
 ### 进程：处于运行状态的程序
 
+# linux 中的软件包管理机制
+### Deb 软件包的基本操作
+###### 例：sl_3.03-17_amd64.deb
+	sl,表示软件包名称
+	3.03-17, 表示版本号和修订版本号
+	amd64 ,表示运行机器的平台框架（64位）　　x86 ：　３２位
+	deb, 表示deb软件包的后缀名
+
 # 在超级用户下安装卸载
 ## 本地安装　：
 	dpkg      : 本地安装操作命令
@@ -144,4 +152,78 @@
 	apt-get upgrade : 升级软件包
 ### 如果安装失败。输入以下命令进行调节，解决依赖关系后继续安装
 	sudo apt-get install -f
+
+### FTP(简单文件传输协议)服务器和用户的安装
+###### １．检查TFTP服务器和客户端的安装状态
+	dpkg -s tftpd-hpa
+	dpkg -s tftp-hpa
+###### ２．在线安装服务器和客户端
+	sudo apt-get update
+	sudo apt-get install tftpd-hpa
+	sudo apt-get install tftp-hpa
+### TFTP服务器的配置
+###### 修改TFTP服务器的配置文件　/etc/default/tftpd-hpa
+	TFTP_USERNAME="tftp"
+	TFTP_DIRECTORY="/var/lib/tftpboot"
+	TFTP_ADDRESS="[::]:69"
+	TFTP_OPTIONS="--SECURE  -c  -l"
+## TFTP服务的启动，重启以及停止操作
+#### 启动服务
+	root@linux:~# service ftfpd-hpa start
+	tftpd-hpa start/running,process 5061
+#### 重启服务
+	root@linux:~# service tftpd-hpa restart
+	tftpd-hpa stop/waiting
+	tftpd-hpa start/running,process 5096
+#### 停止服务
+	root@linux:~# service tftpd-hpa stop
+	tftpd-hpa stop/waiting
+## TFTP服务的测试
+#### 1.客户端连接服务器
+	bao@linux:~$ tftp 127.0.0.1
+	tftp>
+#### 2.输入上传文件命令
+	bao@linux:~$ tftp 127.0.0.1
+	tftp> put 文件名
+#### 3.输入下载文件命令
+	bao@linux:~$ tftp 127.0.0.1
+	tftp>　get 文件名
+#### 4.输入退出命令
+	bao@linux:~$ tftp 127.0.0.1
+	tftp>　quit
+	
+## NFS服务器的安装
+#### 1.检查NFSf服务器的安装状态
+	dpkg -s nfs-kernel-server
+#### 2.在线安装NFS服务器
+	sudo apt-get update
+	sudo apt-get install nfs-kernel-server
+## NFS服务器的配置
+##### 修改NFS服务器的配置文件　/etc/exports 文件
+	# /etc/exports: the access control list for filesystems which may be exported
+	#	to NFS clients. See exports(5)
+	#
+	# Example for NFSv2 and NFSV3:
+	# /srv/home  hostname1(rw,sync,no_subtree_check) hostname2(ro,sync,no_subtree_check)
+	#
+	# Eeample for NFSv4:
+	# /srv/nfs4         gss/krb5i(rw,sync,fsid=0,crossmnt,no_subtree_check)
+	# /srv/nfs4/homes   gss/krb5i(rw,sync,no_subtree_check)
+	# 
+	/nfs_root_dir   *(rw,sync,no_subtree_check,no_root_squash)
+### 配置详细参数可以参考　man exports 手册
+## NFS　服务的启动，重启以及停止操作
+#### 启动服务
+	root@linux:/# service nfs-kernel-server start
+#### 重新启动
+	root@linux:/# service nfs-kernel-server restart
+#### 停止启动
+	root@linux:/# service nfs-kernel-server stop
+
+### NFS 服务的测试
+#### 1. 客户端创建一个挂在目录
+	mkdir  /mount_nfs
+#### 2. 客户端挂在远端ＮＦＳ服务器
+	root@linux:/# mount -t nfs 127.0.0.1:/nfs_root_dir   /mount_nfs
+#### 3.挂在成功后操作本地的　mount_nfs 目录就相当于操作远端 nfs_root_dir 目录了
 	
