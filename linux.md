@@ -169,7 +169,7 @@
 	TFTP_OPTIONS="--SECURE  -c  -l"
 ## TFTP服务的启动，重启以及停止操作
 #### 启动服务
-	root@linux:~# service ftfpd-hpa start
+	root@linux:~# service tftpd-hpa start
 	tftpd-hpa start/running,process 5061
 #### 重启服务
 	root@linux:~# service tftpd-hpa restart
