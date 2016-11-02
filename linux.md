@@ -222,7 +222,7 @@
 
 ### NFS 服务的测试
 #### 1. 客户端创建一个挂在目录
-	bao@linux : ~$ lmkdir  /mount_nfs
+	bao@linux : ~$ mkdir  /mount_nfs
 #### 2. 客户端挂在远端ＮＦＳ服务器
 	root@linux:/# mount -t nfs 127.0.0.1:/nfs_root_dir   /mount_nfs
 #### 3.挂在成功后操作本地的　mount_nfs 目录就相当于操作远端 nfs_root_dir 目录了
