@@ -192,7 +192,7 @@
 	bao@linux:~$ tftp 127.0.0.1
 	tftp>　quit
 	
-## NFS服务器的安装
+# NFS服务器的安装
 #### 1.检查NFSf服务器的安装状态
 	dpkg -s nfs-kernel-server
 #### 2.在线安装NFS服务器
