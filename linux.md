@@ -228,3 +228,27 @@
 #### 3.挂在成功后操作本地的　mount_nfs 目录就相当于操作远端 nfs_root_dir 目录了
 ### umount mount_nfs/   取消挂载
 	
+#### 端口号 ： 是用来区分进程的
+
+## 远程安全登录服务器SSH
+#### SSH服务器和客户端的安装
+###### 1.检查SSH服务器和客户端的安装状态
+	1. dpkg -s openssh-server
+	2. dpkg -s openssh-client
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
