@@ -233,9 +233,73 @@
 ## 远程安全登录服务器SSH
 #### SSH服务器和客户端的安装
 ###### 1.检查SSH服务器和客户端的安装状态
-	1. dpkg -s openssh-server
-	2. dpkg -s openssh-client
+	dpkg -s openssh-server
+	dpkg -s openssh-client
+###### 2.在线安装服务器和客户端
+	sudo apt-get update
+	sudo apt-get install openssh-server
+	sudo apt-get install openssh-client
+## SSH 服务器的配置
+#### 修改SSH服务器的配置文件 /etc/ssh/sshd_config
+	配置文件无改动 或者根据自己需要改动 （如无特殊情况不要改动）
+##### 重要参数
+	port 设置sshd监听的端口号
+	ListenAddress 设置sshd 服务器绑定的IP地址
+	HostKey 设置包含计算机私人秘钥的文件
+	ServerKeyBits 定义服务器秘钥的位数
+	LoginGraceTime 设置如果洪湖不能成功登录，在切断连接之前服务器需要等待的时间（以秒为单位）。
+	KeyRegenerationInterval 设置再多爱好秒之后自动重新生成服务其的密钥（如果使用密钥）。重新生成密钥是为了防止盗用密钥解密被截获的信息。
+	PermitRootLogin 设置 root 能不能用 ssh 登录。这个选项一定不要设成 yes 。
+	X11Forwarding 设置是否允许 X11 转发
+##### 更多参数参考 man sshd_config 手册
 
+### SSH 服务的启动，重启，及停止操作 （需在超级用户下操作）
+	service sshd start	: 启动
+	service sshd restart	: 重启
+	service sshd stop	: 停止
+## SSH 服务的测试
+#### 直接使用 ssh 连接主机即可
+	root@linux:~# ssh bao@192.168.1.101
+	exit 退出连接
+### ps ajx | grep 查找的字符串关键字    ：查找字符串
+	|  ：  是管道
+### ls | wc -l :
+	wc : 输出行，单词字节的个数
+	-l : 直接输出行
+### wc 文件名 ： 查看一个文件的行，单词，字节
+
+### grep : 检索文件内容 ：根据内容找到关键字
+### grep 关键字 文件  ： 在文件中找到有关键字的行
+### grep -n 关键字  文件 ： 查找的关键字在哪一行
+### grep -R 关键字  文件 ： 
+
+#### tree： 列出目录机器文件夹
+
+# scp 拷贝
+### scp google-chrome-stable_current_amd64.deb  teacher@192.168.1.98:　　拷贝文件
+	scp 文件名  需要拷贝到的路径地址
+	scp  bao@192.168.1.101:/home/bao/atom-amd64.deb   .
+		是把用户bao 的这个路径下atom复制到自己的当前目录
+	： 是路径分隔符
+### scp -r ... 拷贝目录（需参数 -r）
+
+## apache (阿帕奇) 的安装及应用
+	sudo apt-get install tasksel
+	su -                    进入超级用户
+	tasksel
+	exit                    退出超级用户
+	ps ajx | grep apache
+	cd /var/www
+	sudo chmod 777 html
+	cd html
+	mkdir download
+	cd download
+	网页输入IP 192.168.1.101/download    就能实现在download下载的功能了（IP根据电脑的IP进行改动）
+	
+	
+	
+	
+	
 
 
 
