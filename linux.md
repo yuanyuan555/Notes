@@ -80,6 +80,8 @@
 #### usermod -s/bin/bash  -G group,group  newuser  
     修改解释器                   组           目录
     -G 修改用户所属的附加群组　
+#### gpasswd -a 添加用户到组
+#### gpasswd -d 删除 组里的用户
 # root 超级用户
 #### sudo root password   超级用户密码
 #### deluser newuser --remove-home     删除用户  （连带主目录一起删除）
