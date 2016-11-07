@@ -297,8 +297,22 @@
 	mkdir download
 	cd download
 	网页输入IP 192.168.1.101/download    就能实现在download下载的功能了（IP根据电脑的IP进行改动）
-	
-	
+
+##　考试
+#### 1.利用所学命令实现如下功能：在终端上输出 /etc/passwd 文件中你的登陆用户名的用户id和组id
+	提示：需要用到cut 命令，自行查询man手册 举例：用户名为linux。 linux:x:1000:1000:linux,,,:/home/linux:/bin/bash 列出1000:1000
+	命令：　　cat /etc/passwd | grep -e "\blinux\b" | cut -d ":" -f 3,4
+	解释：　　\b查找关键\b　　：　\b 是为了查找的准确
+		cut : 从文件的每一行剪切字节、字符和字段并将这些字节、字符和字段写至标准输出
+#### 2. 通过man手册查询find命令的用法，然后在整个系统根目录中查找 apache2.conf文件
+	find . -name apache2.conf
+##### 知识点　find  , ln　：
+	find 查找路径　-name 文件名称
+	find . -type f | wc -l   统计当前目录下目录的个数
+	find . -type d | wc -l　　统计当前目录下文件的个数
+	find . | du -h            输出用户主目录下所有子目录和文件占磁盘空间的大小
+	ln : 某一个文件在另外一个位置建立一个同步的链接。
+	ln -s  原文件名　软连接名称
 	
 	
 	
