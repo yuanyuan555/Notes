@@ -83,7 +83,7 @@
 #### gpasswd -a 添加用户到组
 #### gpasswd -d 删除 组里的用户
 # root 超级用户
-#### sudo root password   超级用户密码
+#### sudo passwd root   设置超级用户密码
 #### deluser newuser --remove-home     删除用户  （连带主目录一起删除）
 #### delgroup newgroup   删除组名
 	注：如果删除了用户　ls 查看普通用户已经删除，但是电脑仍然有你删的用户，那么说明
