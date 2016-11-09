@@ -155,7 +155,7 @@
 	-n s1 测试s1字符串的长度是否不为0
 ### 文件测试
 	-d name 测试name是否为一个目录
-	-e name 测试一个问价是否存在
+	-e name 测试一个文件是否存在
 	-f name 测试name 是否为普通文件
 	-L name 测试name 是否为符号链接
 	-r name 测试name 文件是否存在且为可读
