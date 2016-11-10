@@ -223,8 +223,9 @@
 	do
 	  操作
 	done
-
-
+### continue ： 结束本次循环，继续执行下次循环
+### break ： 终止循环
+#### 什么是死循环 true  false
 
 
 
